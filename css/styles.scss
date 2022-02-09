@@ -5,7 +5,11 @@ $light-grey: #f6f8fc;
 $grey: #f7f7f7;
 $blue: #81b4ec;
 $paragrape-size: 1.5rem;
-$ibmColor: #1f70c1;
+$ibmColor: #6d8be7;
+$dialogflowColor: #ff9800;
+$azureColor: #0078d4;
+$awsColor: #2e73b8;
+$businessNameSize: 3rem;
 
 * {
   font-family: "Euclid Circular A", sans-serif;
@@ -246,10 +250,11 @@ footer {
 
 #businessPresentation {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
   grid-template-rows: repeat(2, 1fr);
   grid-column-gap: 0px;
   grid-row-gap: 0px;
+  max-width: 80%;
+  margin: 0px auto;
   align-items: center;
   font-size: 1.5rem;
   text-align: center;
@@ -258,8 +263,11 @@ footer {
   }
 
   #logo {
-    max-width: 400px;
-    height: auto;
+    img {
+      height: 250px;
+      width: auto;
+      margin: 0px auto;
+    }
     grid-area: 1 / 1 / 2 / 4;
   }
 
@@ -267,6 +275,7 @@ footer {
     border-radius: 20px;
     padding: 25px;
     background: $light-grey;
+    min-width: 300px;
   }
 
   #block1 {
@@ -284,6 +293,89 @@ footer {
   font-weight: 800;
   font-size: 2rem;
 }
+
+.ibmColor {
+  #logo {
+    .businessName {
+      color: $ibmColor;
+      font-size: $businessNameSize;
+      font-weight: 800;
+      margin-top: 20px;
+    }
+  }
+}
+
+
+
+/*─────────────────────────────────────────────────────────────────────────────────────────────────*/
+/*─────────────────────────────────────────────────────────────────────────────────────────────────*/
+/*─
+/*─                                                                             DIALOGFLOW PAGE
+/*─
+/*─────────────────────────────────────────────────────────────────────────────────────────────────*/
+/*─────────────────────────────────────────────────────────────────────────────────────────────────*/
+
+.dialogflowColor .businessPromote {
+  color: $dialogflowColor;
+}
+
+.dialogflowColor {
+  #logo {
+    .businessName {
+      color: $dialogflowColor;
+      font-size: $businessNameSize;
+      font-weight: 800;
+      margin-top: 20px;
+    }
+  }
+}
+
+/*─────────────────────────────────────────────────────────────────────────────────────────────────*/
+/*─────────────────────────────────────────────────────────────────────────────────────────────────*/
+/*─
+/*─                                                                             DIALOGFLOW PAGE
+/*─
+/*─────────────────────────────────────────────────────────────────────────────────────────────────*/
+/*─────────────────────────────────────────────────────────────────────────────────────────────────*/
+
+.azureColor .businessPromote {
+  color: $azureColor;
+}
+
+.azureColor {
+  #logo {
+    .businessName {
+      color: $azureColor;
+      font-size: $businessNameSize;
+      font-weight: 800;
+      margin-top: 20px;
+    }
+  }
+}
+
+/*─────────────────────────────────────────────────────────────────────────────────────────────────*/
+/*─────────────────────────────────────────────────────────────────────────────────────────────────*/
+/*─
+/*─                                                                             DIALOGFLOW PAGE
+/*─
+/*─────────────────────────────────────────────────────────────────────────────────────────────────*/
+/*─────────────────────────────────────────────────────────────────────────────────────────────────*/
+
+.awsColor .businessPromote {
+  color: $awsColor;
+}
+
+.awsColor {
+  #logo {
+    .businessName {
+      color: $awsColor;
+      font-size: $businessNameSize;
+      font-weight: 800;
+      margin-top: 20px;
+    }
+  }
+}
+
 /*─────────────────────────────────────────────────────────────────────────────────────────────────*/
 /*─────────────────────────────────────────────────────────────────────────────────────────────────*/
 /*─
