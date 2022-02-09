@@ -1288,8 +1288,21 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 var swup = new _swup.default(); // only this line when included with script tag
 
 var toggleMenu = document.querySelector(".toggleMenu");
-var body = document;
-querySelector("body");
+var body = document.querySelector("body");
+/**
+ * Getting "a" tags from navbar to add click event to
+ * close menu on mobile view.
+ */
+
+var navbar = document.getElementById("navbar");
+var aTags = navbar.getElementsByTagName('a');
+
+for (var i = 0; i < aTags.length; i++) {
+  aTags[i].addEventListener("click", function () {
+    body.classList.remove("open");
+  });
+}
+
 toggleMenu.addEventListener("click", function () {
   body.classList.toggle("open");
 });
@@ -1321,7 +1334,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "54493" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "56823" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};

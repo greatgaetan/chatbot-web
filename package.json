@@ -11,6 +11,7 @@
   "author": "Gaëtan Didderen",
   "license": "ISC",
   "dependencies": {
+    "jquery": "^3.6.0",
     "sass": "^1.49.7",
     "swup": "^2.0.14"
   }
