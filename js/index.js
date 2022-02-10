@@ -1,4 +1,3 @@
-import Swup from "swup";
 const swup = new Swup();
 var toggleMenu = document.querySelector(".toggleMenu");
 var body = document.querySelector("body");
