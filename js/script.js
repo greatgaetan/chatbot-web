@@ -1,4 +1,4 @@
-import Swup from "../node_modules/swup/dist/swup.js";
+import Swup from "swup/dist/swup";
 
 const swup = new Swup();
 var toggleMenu = document.querySelector(".toggleMenu");
