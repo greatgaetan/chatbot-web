@@ -1,3 +1,5 @@
+import Swup from "../node_modules/swup/dist/swup.js";
+
 const swup = new Swup();
 var toggleMenu = document.querySelector(".toggleMenu");
 var body = document.querySelector("body");
