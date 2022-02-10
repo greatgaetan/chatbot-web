@@ -248,7 +248,7 @@ footer {
 /*─────────────────────────────────────────────────────────────────────────────────────────────────*/
 /*─────────────────────────────────────────────────────────────────────────────────────────────────*/
 
-#question1:nth-child(1n+1) {
+#question1:nth-child(1n + 1) {
   margin-top: 60px;
 }
 
@@ -331,7 +331,9 @@ footer {
     grid-area: 1 / 1 / 2 / 4;
   }
 
-  #block1, #block2, #block3 {
+  #block1,
+  #block2,
+  #block3 {
     border-radius: 20px;
     padding: 25px;
     background: $light-grey;

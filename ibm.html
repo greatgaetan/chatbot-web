@@ -2,87 +2,55 @@
 <html lang="fr">
 
 <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="css/styles.css" />
-    <link href="http://fonts.cdnfonts.com/css/euclid-circular-a" rel="stylesheet">
-    <script defer src="node_modules/swup/dist/swup.min.js"></script>
-    <script defer src="js/index.js"></script>
-    <title>Chatbots</title>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="css/styles.css" />
+  <link href="http://fonts.cdnfonts.com/css/euclid-circular-a" rel="stylesheet">
+  <script defer src="node_modules/swup/dist/swup.min.js"></script>
+  <script defer src="js/index.js"></script>
+  <title>Chatbots</title>
 </head>
 
 <body>
-    <nav class="shift">
-        <ul id="navbar">
-            <li><a href="index.html">Accueil</a></li>
-            <li><a href="chatbots.html">Chatbots</a></li>
-            <li><a href="ibm.html">IBM Watson</a></li>
-            <li><a href="dialogflow.html">DialogFlow</a></li>
-            <li><a href="azure.html">Azure</a></li>
-            <li><a href="aws.html">AWS</a></li>
-        </ul>
-    </nav>
-    <main id="swup" class="transition-fade">
-        <section id="businessPresentation" class="ibmColor">
-            <div id="logo">
-                <img src="assets/ibm-watson.svg" alt="IBM logo">
-                <div class="businessName">IBM Watson</div>
-            </div>
-            <div id="block1">
-                <div>Sur le marché depuis</div>
-                <div class="businessPromote">2010</div>
-            </div>
-            <div id="block2">
-                <div>Développé par</div>
-                <div class="businessPromote">IBM</div>
-            </div>
-            <div id="block3">
-                <div>Présent depuis</div>
-                <div class="businessPromote">xxxx</div>
-            </div>
-        </section>
-        <section id="homepage-content">
-            <div id="homepage-block" class="transition-fade">
-              <div id="left" class="transition-fade delay1">
-                <p>Bienvenue ! 👋<br><br>
-                  Ce site a été créé dans le cadre d'un <span class="semibold">travail de recherches</span> sur la <span
-                    class="semibold">comparaison</span>
-                  de chatbots sur
-                  différentes plateformes livrant des services permettant le développement de
-                  ceux-ci. 🔎<br><br>Pour analyser et comparer ces assistants virtuels, ils ont tous été créés autour d'un
-                  même
-                  <span class="semibold">protocole</span>, c'est-à-dire qu'ils ont tous la même utilité et les mêmes
-                  fonctionnalités. ✔️
-                </p>
-              </div>
-              <div id="right" class="transition-fade delay1">
-                <img src="assets/ai_feeding.svg" alt="robot_with_computer">
-              </div>
-            </div>
-      
-            <div id="myself-block" class="transition-fade delay2">
-              <div id="left" class="transition-fade delay3">
-                <img src="assets/web_dev.svg" alt="robot_with_computer">
-              </div>
-              <div id="right" class="transition-fade delay3">
-                <p>Développer des chatbots oui... mais pas <span class="semibold">qui</span> ? 🤔<br><br>
-                  Je suis un jeune étudiant belge ayant la chance de faire mon stage de dernière année chez <a
-                    href="https://www.nrb.be/" target="_blank"><img class="responsiveImgInText" id="img-embedded-text" src="assets/nrb.png"
-                      alt="NRB_logo"></a>.
-                  Ce sont eux
-                  qui m'ont proposé cette idée de <span class="semibold">travail de recherches</span> qui m'a tout de suite
-                  plu !<br><br>
-                  Encadré par une équipe experte en <span class="semibold">intelligence artificielle</span> faisant partie du
-                  département "Digital
-                  Transformation & Innovation", j'ai pu apprendre aux côtés de personnes <span
-                    class="semibold">expérimentées</span>, tant
-                  professionnellement que personnellement grâce à leur écoute et leur aide précieuse.
-                </p>
-              </div>
-            </div>
-          </section>
-    </main>
+  <nav class="shift">
+    <div class="toggleMenu">
+      <a id="hamburgerButton" class="openMenu">
+        <img src="assets/menu.svg" alt="menu">
+      </a>
+      <a id="hamburgerButton" class="closeMenu">
+        <img src="assets/cross.svg" alt="menu">
+      </a>
+    </div>
+    <ul id="navbar">
+      <li><a href="index.html">Accueil</a></li>
+      <li><a href="chatbots.html">Chatbots</a></li>
+      <li><a href="ibm.html">IBM Watson</a></li>
+      <li><a href="dialogflow.html">DialogFlow</a></li>
+      <li><a href="azure.html">Azure</a></li>
+      <li><a href="aws.html">AWS</a></li>
+    </ul>
+  </nav>
+  <main id="swup" class="transition-fade">
+    <section id="businessPresentation" class="ibmColor">
+      <div id="logo">
+        <img src="assets/ibm-watson.svg" alt="IBM logo">
+        <div class="businessName">IBM Watson</div>
+      </div>
+      <div id="block1">
+        <div>Sur le marché depuis</div>
+        <div class="businessPromote">2010</div>
+      </div>
+      <div id="block2">
+        <div>Développé par</div>
+        <div class="businessPromote">IBM</div>
+      </div>
+      <div id="block3">
+        <div>Présent depuis</div>
+        <div class="businessPromote">xxxx</div>
+      </div>
+    </section>
+  </main>
 </body>
 
 </html>

@@ -407,7 +407,9 @@ footer {
   width: auto;
   margin: 0px auto;
 }
-#businessPresentation #block1, #businessPresentation #block2, #businessPresentation #block3 {
+#businessPresentation #block1,
+#businessPresentation #block2,
+#businessPresentation #block3 {
   border-radius: 20px;
   padding: 25px;
   background: #f6f8fc;
