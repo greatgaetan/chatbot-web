@@ -2,9 +2,8 @@
   "name": "chatbot-web",
   "version": "1.0.0",
   "description": "This website is used to integrate chatbots made during my internship",
-  "main": "index.js",
+  "main": "script.js",
   "source": "src/index.html",
-  "type": "module",
   "scripts": {
     "start": "parcel index.html",
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -13,6 +12,7 @@
   "license": "ISC",
   "dependencies": {
     "jquery": "^3.6.0",
+    "parcel-bundler": "^1.12.5",
     "sass": "^1.49.7",
     "swup": "^2.0.14"
   }
