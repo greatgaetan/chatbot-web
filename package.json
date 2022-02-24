@@ -4,6 +4,7 @@
   "description": "This website is used to integrate chatbots made during my internship",
   "main": "script.js",
   "source": "src/index.html",
+  "type": "module",
   "scripts": {
     "start": "parcel index.html",
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -11,9 +12,9 @@
   "author": "Gaëtan Didderen",
   "license": "ISC",
   "dependencies": {
+    "aos": "^2.3.4",
     "jquery": "^3.6.0",
     "parcel-bundler": "^1.12.5",
-    "sass": "^1.49.7",
-    "swup": "^2.0.14"
+    "sass": "^1.49.7"
   }
 }

@@ -8,8 +8,10 @@
   <link rel="stylesheet" href="css/styles.css" />
   <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
   <link href="http://fonts.cdnfonts.com/css/euclid-circular-a" rel="stylesheet">
-  <script defer src="node_modules/swup/dist/swup.min.js"></script>
-  <script defer src="js/index.js"></script>
+  <link rel="stylesheet" href="./node_modules/aos/dist/aos.css" />
+
+  <script src="./node_modules/aos/dist/aos.js"></script>
+  <script defer src="js/script.js"></script>
   <title>IBM Watson</title>
 </head>
 
@@ -32,21 +34,21 @@
       <li><a href="aws.html">AWS</a></li>
     </ul>
   </nav>
-  <main id="swup" class="transition-fade">
+  <main   class="transition-fade">
     <section id="businessPresentation" class="ibmColor">
-      <div id="logo">
+      <div id="logo" data-aos="zoom-in">
         <img src="assets/ibm-watson.svg" alt="IBM logo">
         <div class="businessName">IBM Watson</div>
       </div>
-      <div id="block1">
+      <div id="block1" data-aos="zoom-out" data-aos-delay="100">
         <div>Sur le marché depuis</div>
         <div class="businessPromote">2010</div>
       </div>
-      <div id="block2">
+      <div id="block2" data-aos="zoom-out" data-aos-delay="200">
         <div>Développé par</div>
         <div class="businessPromote">IBM</div>
       </div>
-      <div id="block3">
+      <div id="block3" data-aos="zoom-out" data-aos-delay="300">
         <div>Présent depuis</div>
         <div class="businessPromote">xxxx</div>
       </div>

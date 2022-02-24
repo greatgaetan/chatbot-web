@@ -1,4 +1,6 @@
-const swup = new Swup();
+AOS.init({
+  once: true,
+});
 var toggleMenu = document.querySelector(".toggleMenu");
 var body = document.querySelector("body");
 

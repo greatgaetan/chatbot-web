@@ -7,11 +7,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="css/styles.css" />
     <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
-
     <link href="http://fonts.cdnfonts.com/css/euclid-circular-a" rel="stylesheet">
-    <script src="https://unpkg.com/swup@latest/dist/swup.min.js"></script>
+    <link rel="stylesheet" href="./node_modules/aos/dist/aos.css" />
+
+    <script src="./node_modules/aos/dist/aos.js"></script>
+    <script src="https://www.gstatic.com/dialogflow-console/fast/messenger/bootstrap.js?v=1"></script>
     <script defer src="js/script.js"></script>
-    <title>Chatbots</title>
+    <title>Dialogflow</title>
 </head>
 
 <body>
@@ -35,19 +37,19 @@
     </nav>
     <main id="swup" class="transition-fade">
         <section id="businessPresentation" class="dialogflowColor">
-            <div id="logo">
+            <div id="logo" data-aos="zoom-in">
                 <img src="assets/dialogflow.svg" alt="Dialogflow logo">
                 <div class="businessName">Dialogflow</div>
             </div>
-            <div id="block1">
+            <div id="block1" data-aos="zoom-out" data-aos-delay="100">
                 <div>Sur le marché depuis</div>
                 <div class="businessPromote">2010</div>
             </div>
-            <div id="block2">
+            <div id="block2" data-aos="zoom-out" data-aos-delay="200">
                 <div>Développé par</div>
                 <div class="businessPromote">Google</div>
             </div>
-            <div id="block3">
+            <div id="block3" data-aos="zoom-out" data-aos-delay="300">
                 <div>Présent depuis</div>
                 <div class="businessPromote">xxxx</div>
             </div>
@@ -65,6 +67,9 @@
             </iframe>
             -->
         </section>
+        <df-messenger chat-icon="https:&#x2F;&#x2F;img.icons8.com&#x2F;fluency&#x2F;344&#x2F;chatbot.png"
+            intent="WELCOME" chat-title="SandWish" agent-id="9703e9ab-e8c4-4b54-87c8-0b32e733964f" language-code="fr">
+        </df-messenger>
     </main>
 </body>
 
