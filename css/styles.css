@@ -464,7 +464,16 @@ footer {
   justify-content: center;
   flex-direction: column;
   text-align: center;
-  margin-bottom: 100px;
+  margin: 0px auto 100px auto;
+  background: #f6f8fc;
+  border-radius: 20px;
+  max-width: 80%;
+  padding: 40px;
+}
+#dialogflowBotSection p {
+  text-align: center;
+  font-weight: 400;
+  font-size: 1.5rem;
 }
 
 .dialogflowFrame {
