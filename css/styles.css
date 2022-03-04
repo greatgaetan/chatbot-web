@@ -565,6 +565,18 @@ df-messenger {
     top: 6px;
   }
 }
+@media screen and (max-width: 1200px) {
+  #businessPresentation {
+    display: flex;
+    flex-direction: column;
+  }
+  #businessPresentation #block1 {
+    margin-top: 20px;
+  }
+  #businessPresentation #block1, #businessPresentation #block2, #businessPresentation #block3 {
+    margin-bottom: 50px;
+  }
+}
 @media screen and (max-width: 900px) {
   #homepage-block #left p {
     font-size: 1rem;
@@ -576,6 +588,14 @@ df-messenger {
 
   #footerSize {
     font-size: 1rem !important;
+  }
+
+  #dialogflowBotSection p {
+    font-size: 1rem;
+  }
+
+  .separationTitle {
+    font-size: 2rem;
   }
 }
 /*MEDIA QUERIES FOR NAVBAR & FONT SIZE */
