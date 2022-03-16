@@ -138,6 +138,22 @@ body {
   color: #81b4ec;
 }
 
+.ibmColor {
+  color: #6d8be7;
+}
+
+.dialogflowColor {
+  color: #ff9800;
+}
+
+.azureColor {
+  color: #0078d4;
+}
+
+.awsColor {
+  color: #2e73b8;
+}
+
 /*─────────────────────────────────────────────────────────────────────────────────────────────────*/
 /*─────────────────────────────────────────────────────────────────────────────────────────────────*/
 /*─
@@ -378,6 +394,28 @@ footer {
   font-size: 1.5rem;
 }
 
+.separationTitle {
+  font-size: 3rem;
+  font-weight: 800;
+}
+
+#botIntegrationSection {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+  margin: 0px auto 100px auto;
+  background: #f6f8fc;
+  border-radius: 20px;
+  max-width: 80%;
+  padding: 40px;
+}
+#botIntegrationSection p {
+  text-align: center;
+  font-weight: 400;
+  font-size: 1.5rem;
+}
+
 /*─────────────────────────────────────────────────────────────────────────────────────────────────*/
 /*─────────────────────────────────────────────────────────────────────────────────────────────────*/
 /*─
@@ -459,34 +497,11 @@ footer {
   margin-top: 20px;
 }
 
-#dialogflowBotSection {
-  display: flex;
-  justify-content: center;
-  flex-direction: column;
-  text-align: center;
-  margin: 0px auto 100px auto;
-  background: #f6f8fc;
-  border-radius: 20px;
-  max-width: 80%;
-  padding: 40px;
-}
-#dialogflowBotSection p {
-  text-align: center;
-  font-weight: 400;
-  font-size: 1.5rem;
-}
-
 .dialogflowFrame {
   margin: 0px auto;
   width: 700px;
   height: 600px;
   background-color: #ff9800;
-}
-
-.separationTitle {
-  color: #ff9800;
-  font-size: 3rem;
-  font-weight: 800;
 }
 
 df-messenger {
@@ -590,7 +605,7 @@ df-messenger {
     font-size: 1rem !important;
   }
 
-  #dialogflowBotSection p {
+  #botIntegrationSection p {
     font-size: 1rem;
   }
 

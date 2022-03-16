@@ -47,6 +47,22 @@ body {
   color: $blue;
 }
 
+.ibmColor {
+  color: $ibmColor;
+}
+
+.dialogflowColor {
+  color: $dialogflowColor;
+}
+
+.azureColor {
+  color: $azureColor;
+}
+
+.awsColor {
+  color: $awsColor;
+}
+
 /*─────────────────────────────────────────────────────────────────────────────────────────────────*/
 /*─────────────────────────────────────────────────────────────────────────────────────────────────*/
 /*─
@@ -300,6 +316,29 @@ footer {
   }
 }
 
+.separationTitle {
+  font-size: $businessNameSize;
+  font-weight: 800;
+}
+
+#botIntegrationSection {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+  margin: 0px auto 100px auto;
+  background: $light-grey;
+  border-radius: 20px;
+  max-width: 80%;
+  padding: 40px;
+
+  p {
+    text-align: center;
+    font-weight: 400;
+    font-size: $paragrape-size;
+  }
+}
+
 /*─────────────────────────────────────────────────────────────────────────────────────────────────*/
 /*─────────────────────────────────────────────────────────────────────────────────────────────────*/
 /*─
@@ -394,35 +433,11 @@ footer {
   }
 }
 
-#dialogflowBotSection {
-  display: flex;
-  justify-content: center;
-  flex-direction: column;
-  text-align: center;
-  margin: 0px auto 100px auto;
-  background: $light-grey;
-  border-radius: 20px;
-  max-width: 80%;
-  padding: 40px;
-
-  p {
-    text-align: center;
-    font-weight: 400;
-    font-size: $paragrape-size;
-  }
-}
-
 .dialogflowFrame {
   margin: 0px auto;
   width: 700px;
   height: 600px;
   background-color: $dialogflowColor;
-}
-
-.separationTitle {
-  color: $dialogflowColor;
-  font-size: $businessNameSize;
-  font-weight: 800;
 }
 
 df-messenger {
@@ -556,7 +571,7 @@ df-messenger {
     font-size: 1rem !important;
   }
 
-  #dialogflowBotSection {
+  #botIntegrationSection {
     p {
       font-size: 1rem;
     }
