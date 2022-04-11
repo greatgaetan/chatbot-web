@@ -35,7 +35,7 @@
             <li><a href="aws.html">Amazon</a></li>
         </ul>
     </nav>
-    <main   class="transition-fade">
+    <main class="transition-fade">
         <section id="businessPresentation" class="awsColor">
             <div id="logo" data-aos="zoom-in">
                 <img src="assets/amazon-lex.svg" alt="Amazon logo">
@@ -56,23 +56,29 @@
         </section>
         <script>
             var loaderOpts = {
-              baseUrl: 'https://d7stgxgde2aq1.cloudfront.net/',
-              shouldLoadMinDeps: true
+                baseUrl: 'https://d7stgxgde2aq1.cloudfront.net/',
+                shouldLoadMinDeps: true
             };
             var loader = new ChatBotUiLoader.IframeLoader(loaderOpts);
             var chatbotUiConfig = {
-                    /* Example of setting session attributes on parent page
-                    lex: {
-                      sessionAttributes: {
-                        userAgent: navigator.userAgent,
-                        QNAClientFilter: ''
-                      }
-                    }
-                    */
-                  };
+                ui: {
+                    // origin of the parent site where you are including the chatbot UI
+                    // set to window.location.origin since hosting on same site
+                    parentOrigin: window.location.origin,
+                },
+                iframe: {
+                    // origin hosting the HTML file that will be embedded in the iframe
+                    // set to window.location.origin since hosting on same site
+                    iframeOrigin: window.location.origin,
+                },
+                lex: {
+                    // Lex Bot Name in your account
+                    botName: 'SandWish'
+                }
+            };
             loader.load(chatbotUiConfig)
-              .catch(function (error) { console.error(error); });
-          </script>
+                .catch(function (error) { console.error(error); });
+        </script>
     </main>
     <footer id="footerSize">Créé par Gaëtan Didderen. © 2022</footer>
 </body>
