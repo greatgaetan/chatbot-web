@@ -12,7 +12,7 @@
 
     <script src="./node_modules/aos/dist/aos.js"></script>
     <script defer src="js/script.js"></script>
-    <script src="https://d7stgxgde2aq1.cloudfront.net/lex-web-ui-loader.min.js"></script>
+    <script src="https://d17pcynvpjgcsq.cloudfront.net/lex-web-ui-loader.min.js"></script>
     <title>Amazon Lex</title>
 </head>
 
@@ -56,30 +56,26 @@
         </section>
         <script>
             var loaderOpts = {
-                baseUrl: 'https://d7stgxgde2aq1.cloudfront.net/',
-                shouldLoadMinDeps: true
+              baseUrl: 'https://d17pcynvpjgcsq.cloudfront.net/',
+              shouldLoadMinDeps: true
             };
             var loader = new ChatBotUiLoader.IframeLoader(loaderOpts);
             var chatbotUiConfig = {
-                ui: {
-                    // origin of the parent site where you are including the chatbot UI
-                    // set to window.location.origin since hosting on same site
-                    parentOrigin: window.location.origin,
-                },
-                iframe: {
-                    // origin hosting the HTML file that will be embedded in the iframe
-                    // set to window.location.origin since hosting on same site
-                    iframeOrigin: window.location.origin,
-                },
-                lex: {
-                    // Lex Bot Name in your account
-                    botName: 'SandWish'
-                }
-            };
+                    /* Example of setting session attributes on parent page
+                    lex: {
+                      sessionAttributes: {
+                        userAgent: navigator.userAgent,
+                        QNAClientFilter: ''
+                      }
+                    }
+                    */
+                  };
             loader.load(chatbotUiConfig)
-                .catch(function (error) { console.error(error); });
-        </script>
+              .catch(function (error) { console.error(error); });
+          </script>
     </main>
+    <iframe  width="700"
+    height="800" src="https://d17pcynvpjgcsq.cloudfront.net/index.html#/?lexWebUiEmbed=true"></iframe>
     <footer id="footerSize">Créé par Gaëtan Didderen. © 2022</footer>
 </body>
 
