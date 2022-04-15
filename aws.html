@@ -54,25 +54,6 @@
                 <div class="businessPromote">xxxx</div>
             </div>
         </section>
-        <script>
-            var loaderOpts = {
-              baseUrl: 'https://d17pcynvpjgcsq.cloudfront.net/',
-              shouldLoadMinDeps: true
-            };
-            var loader = new ChatBotUiLoader.IframeLoader(loaderOpts);
-            var chatbotUiConfig = {
-                    /* Example of setting session attributes on parent page
-                    lex: {
-                      sessionAttributes: {
-                        userAgent: navigator.userAgent,
-                        QNAClientFilter: ''
-                      }
-                    }
-                    */
-                  };
-            loader.load(chatbotUiConfig)
-              .catch(function (error) { console.error(error); });
-          </script>
     </main>
     <iframe  width="700"
     height="800" src="https://d17pcynvpjgcsq.cloudfront.net/index.html#/?lexWebUiEmbed=true"></iframe>
