@@ -34,7 +34,7 @@
       <li><a href="aws.html">Amazon</a></li>
     </ul>
   </nav>
-  <main   class="transition-fade">
+  <main class="transition-fade">
     <section id="businessPresentation" class="ibmColor">
       <div id="logo" data-aos="zoom-in">
         <img src="assets/ibm-watson.svg" alt="IBM logo">
@@ -56,20 +56,20 @@
     <section id="botIntegrationSection" data-aos="zoom-out" data-aos-delay="400">
       <h1 class="separationTitle ibmColor">Intégration</h1>
       <p>L'intégration du chatbot IBM Watson Assistant se trouve en bas à droite de votre écran! L'intégration est sous
-          forme d'un petit robot "pop-up", c'est l'intégration par défaut du chatbot IBM.</p>
-  </section>
+        forme d'un petit robot "pop-up", c'est l'intégration par défaut du chatbot IBM.</p>
+    </section>
   </main>
   <footer id="footerSize">Créé par Gaëtan Didderen. © 2022</footer>
   <script>
     window.watsonAssistantChatOptions = {
-        integrationID: "84c3c751-bb94-4adc-9989-e1132974c581", // The ID of this integration.
-        region: "eu-de", // The region your integration is hosted in.
-        serviceInstanceID: "c20f987c-93a2-49e6-8ee5-f92ff175ee79", // The ID of your service instance.
-        onLoad: function(instance) { instance.render(); }
-      };
-    setTimeout(function(){
-      const t=document.createElement('script');
-      t.src="https://web-chat.global.assistant.watson.appdomain.cloud/versions/" + (window.watsonAssistantChatOptions.clientVersion || 'latest') + "/WatsonAssistantChatEntry.js"
+      integrationID: "84c3c751-bb94-4adc-9989-e1132974c581", // The ID of this integration.
+      region: "eu-de", // The region your integration is hosted in.
+      serviceInstanceID: "c20f987c-93a2-49e6-8ee5-f92ff175ee79", // The ID of your service instance.
+      onLoad: function (instance) { instance.render(); }
+    };
+    setTimeout(function () {
+      const t = document.createElement('script');
+      t.src = "https://web-chat.global.assistant.watson.appdomain.cloud/versions/" + (window.watsonAssistantChatOptions.clientVersion || 'latest') + "/WatsonAssistantChatEntry.js"
       document.head.appendChild(t);
     });
   </script>
