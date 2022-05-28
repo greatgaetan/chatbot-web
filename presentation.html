@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/styles.css" />
+    <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
+    <link href="http://fonts.cdnfonts.com/css/euclid-circular-a" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css" />
+    <script src="https://www.gstatic.com/dialogflow-console/fast/messenger/bootstrap.js?v=1"></script>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script defer src="js/script.js"></script>
+    <title>Présentation</title>
+</head>
+
+<body style="margin: auto 0;">
+    <section class="presentationSection">
+        <h1>Démonstration des chatbots</h1>
+        <div class="parent">
+            <div class="div1">
+                <h1>Amazon, Lex</h1>
+                <iframe style="border: none;" height="auto" width="auto"
+                    src="https://widget.kommunicate.io/chat?appId=253dee28acf27cc0dd2d0ea8515a43906"
+                    allow="microphone; geolocation;">
+                </iframe>
+                <img src="assets/amazon-lex.svg" alt="Amazon logo">
+            </div>
+            <div class="div2">
+                <h1>Microsoft, Azure</h1>
+                <iframe
+                    src='https://webchat.botframework.com/embed/NRB-DT-FourMay-Sandwish-Chatbot?s=rfpLaAka3K0.ozzui7iRVtgp0cENbIuasKAgNdlqUZXKy4v-2nyE9kc'
+                    style='width: 100%; min-height: 500px;'>
+                </iframe>
+                <img src="assets/azure.svg" alt="Azure logo">
+            </div>
+            <div class="div3">
+                <h1>Google, Dialogflow</h1>
+                <iframe allow="microphone;"
+                    src="https://console.dialogflow.com/api-client/demo/embedded/9703e9ab-e8c4-4b54-87c8-0b32e733964f">
+                </iframe>
+                <img src="assets/dialogflow.svg" alt="Dialogflow logo">
+            </div>
+            <div class="div4">
+                <h1>IBM, Watson Assistant</h1>
+                <div class="watsonElement" style="height: 100%"></div>
+                <script>
+                    const element = document.querySelector('.watsonElement');
+                    window.watsonAssistantChatOptions = {
+                        integrationID: "84c3c751-bb94-4adc-9989-e1132974c581", // The ID of this integration.
+                        region: "eu-de", // The region your integration is hosted in.
+                        serviceInstanceID: "c20f987c-93a2-49e6-8ee5-f92ff175ee79",
+
+                        // Provide the custom element.
+                        element: element,
+                        // Hide the close button since we want it always open.
+                        hideCloseButton: true,
+                        // Hide the default launcher.
+                        showLauncher: false,
+                        // Make the window open by default.
+                        openChatByDefault: true,
+
+                        onLoad: function (instance) {
+                            instance.render();
+                        }
+                    };
+
+                    setTimeout(function () { const t = document.createElement('script'); t.src = "https://web-chat.global.assistant.watson.appdomain.cloud/versions/" + (window.watsonAssistantChatOptions.clientVersion || 'latest') + "/WatsonAssistantChatEntry.js"; document.head.appendChild(t); });
+                </script>
+                <img src="assets/ibm-watson.svg" alt="IBM logo">
+            </div>
+        </div>
+
+    </section>
+</body>
+
+</html>

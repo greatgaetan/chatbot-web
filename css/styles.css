@@ -107,6 +107,80 @@ iframe {
   color: #202226;
 }
 
+.presentationSection > h1 {
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 3rem;
+  margin: 0 0 20px 0;
+}
+
+.parent {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: 1fr;
+  grid-column-gap: 0px;
+  grid-row-gap: 0px;
+}
+.parent div {
+  margin: 0 2px;
+}
+.parent h1 {
+  text-align: center;
+  font-size: 1.5rem;
+}
+
+.div1 {
+  grid-area: 1/1/2/2;
+}
+.div1 h1 {
+  background-color: #2e73b8;
+  padding: 10px 0px;
+}
+.div1 img {
+  height: 100px;
+  width: 100px;
+  margin: 5px auto;
+}
+
+.div2 {
+  grid-area: 1/2/2/3;
+}
+.div2 h1 {
+  background-color: #0078d4;
+  padding: 10px 0px;
+}
+.div2 img {
+  height: 100px;
+  width: 100px;
+  margin: 5px auto;
+}
+
+.div3 {
+  grid-area: 1/3/2/4;
+}
+.div3 h1 {
+  background-color: #ff9800;
+  padding: 10px 0px;
+}
+.div3 img {
+  height: 100px;
+  width: 100px;
+  margin: 5px auto;
+}
+
+.div4 {
+  grid-area: 1/4/2/5;
+}
+.div4 h1 {
+  background-color: #6d8be7;
+  padding: 10px 0px;
+}
+.div4 img {
+  height: 100px;
+  width: 100px;
+  margin: 5px auto;
+}
+
 iframe {
   position: relative;
 }
@@ -588,7 +662,9 @@ df-messenger {
   #businessPresentation #block1 {
     margin-top: 20px;
   }
-  #businessPresentation #block1, #businessPresentation #block2, #businessPresentation #block3 {
+  #businessPresentation #block1,
+#businessPresentation #block2,
+#businessPresentation #block3 {
     margin-bottom: 50px;
   }
 }
